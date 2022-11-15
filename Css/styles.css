@@ -1,4 +1,6 @@
-/* Typography */
+*, *::after, *::before{
+box-sizing: border-box;
+}
  
 html {
     font-size: 62.5%;
@@ -19,6 +21,8 @@ body {
  line-height: 1.5;
 
 }
+
+/* Typography */
 
 h1, h2, h3 {
     color: var(--headings-color);
@@ -178,3 +182,62 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+/* buttons */
+
+.buttons {
+    border-radius:  40px;
+    cursor: pointer;
+    font-weight: 600;
+    outline: 0;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    white-space: nowrap;
+    margin: 1rem 0;
+}
+
+.buttons--primary {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: var(--headings-color);
+    border: var(--headings-color) solid 2.5px;
+}
+
+.buttons--primary:hover {
+    background: var(--headings-color);
+    color: white;
+} 
+
+.buttons--secondary {
+    color: white;
+    background: var(--secondary-color);
+    border: 0;
+}
+
+.buttons--secondary:hover {
+ background: #58e6ff;
+}
+
+.buttons--accent {
+    border: 0;
+    color: white;
+    background: var(--accent-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: ;
+}
+
+.buttons--accent:hover {
+    background: #db2d00;
+}
+
+@media screen and (min-width:1024px) {
+    .buttons {
+        font-size: 1.5rem;
+    }
+}
+
+
