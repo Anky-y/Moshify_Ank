@@ -507,11 +507,11 @@ margin-top: 1rem;
     display: grid;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
     .grid--1x2 {
-        grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
     }
-}
+  }
 
 @media screen and (min-width:1024px) {
     .grid--1x3 {
@@ -812,4 +812,27 @@ width: 100%;
 .block--container .card {
     max-width: 500px;
     margin: 0 auto;
+}
+
+/* features */
+
+.feature {
+    gap: 2rem;
+}
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+.feature__header {
+    margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(even) .feature__content {
+       order: 2;
+    }
 }
