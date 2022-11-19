@@ -1,0 +1,15 @@
+{
+  "name": "the-final-website",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
