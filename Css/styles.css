@@ -147,7 +147,6 @@ a {
 .list {
     list-style: none;
     padding-left: 0;
-
 }
 
 
@@ -216,7 +215,7 @@ a {
     cursor: pointer;
     font-weight: 600;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-transform: uppercase;
     font-size: 1.8rem;
     white-space: nowrap;
@@ -307,6 +306,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 4rem;
+    width: 0;
 }
 
 .input-group .buttons {
@@ -572,7 +572,10 @@ width: 100%;
 .callout {
     padding: 4rem;
     border-radius: 5px;
-
+    max-width: 980px;
+    margin: 0 auto;
+    max-width: 580px;
+    border-radius: 10px;
 }
 
 .callout--primary {
@@ -592,7 +595,9 @@ width: 100%;
     text-align: center;
 }
 
-
+.callout-signup {
+    transform: translateY(15rem);
+  }
 
 .callout__content {
     text-align: center;
@@ -610,6 +615,10 @@ width: 100%;
     .callout .buttons {
         justify-self:start ;
         margin: 0 2rem;
+    }
+
+    .callout {
+        max-width: 980px;
     }
 
 }
@@ -652,7 +661,7 @@ width: 100%;
 /* blocks */
 .block {
     --padding-vertical: 6rem;
-    padding: var(--padding-vertical) 2rem;
+    padding:  2rem;
 }
 
 .block__heading {
@@ -789,8 +798,9 @@ width: 100%;
 }
 
 .block__domain-prices {
+    color: var(--headings-color);
     display: grid; 
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,6rem);
     font-size: 2rem;
     font-weight: 600;
@@ -820,12 +830,14 @@ width: 100%;
 .block--container .card {
     max-width: 500px;
     margin: 0 auto;
+    
 }
 
 /* features */
 
 .feature {
     gap: 2rem;
+   margin-bottom: 10rem;
 }
 .feature__heading {
     margin: 1rem 0;
@@ -855,6 +867,10 @@ width: 100%;
     width: 100%;
 }
 
+.showcase__heading {
+    text-align: center;
+}
+
 
 @media screen and (min-width:768px) {
 .block-showcase .grid {
@@ -876,6 +892,7 @@ width: 100%;
 .footer {
     background: #232323;
     padding-bottom: 3rem;
+    padding-top: 20rem;
 }
  
 .footer__section {
@@ -895,11 +912,16 @@ width: 100%;
 .footer__heading {
     text-transform: uppercase;
     font-weight: 600;
+    padding-bottom: 2rem;
 }
 
 .footer__brand {
    text-align: center;
    margin-top: 5rem;
+}
+
+.footer__items {
+  padding-bottom: 2rem;
 }
 
 .footer__copyright {
